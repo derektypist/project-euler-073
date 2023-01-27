@@ -46,3 +46,7 @@ User Stories on function `countingFractionsInARange(limit)` taken from [FreeCode
 
 The function `countingFractionsInARange(limit)` returns a number, where `limit` is a number between 8 and 12000.
 
+## Features
+
+Allows the user to enter the limit in order to get the number of fractions lying between 1/3 and 1/2 in the sorted set of reduced proper fractions for d &le; limit.  Performs checks on valid user input.  If the input is not valid, an error message is displayed.
+
