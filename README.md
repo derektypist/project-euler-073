@@ -50,3 +50,29 @@ The function `countingFractionsInARange(limit)` returns a number, where `limit` 
 
 Allows the user to enter the limit in order to get the number of fractions lying between 1/3 and 1/2 in the sorted set of reduced proper fractions for d &le; limit.  Performs checks on valid user input.  If the input is not valid, an error message is displayed.
 
+## Technologies
+
+Uses HTML5, CSS3, JavaScript, Bootstrap 5.3.0-alpha1 and Google Fonts.
+
+## Testing
+
+Ensure all user stories have been met.  In the terminal enter:
+
+    python3 -m http.server
+
+Select `Open Preview` to do a preview.  Enter the numbers and Submit.  Check if the result corresponds to the user story.  If it does not, check typing.
+
+## Deployment
+
+Deployed on [GitHub Pages](https://derektypist.github.io/project-euler-073) at the main branch.
+
+## Credits
+
+### Content
+
+Written by me.
+
+### Acknowledgements
+
+- [Project Euler](https://projecteuler.net)
+- [FreeCodeCamp](https://www.freecodecamp.org)
