@@ -5,7 +5,7 @@ function getLimitInfo() {
     // Get the value of the Input Field
     let num = document.getElementById("mylimit").value;
     // Check if the Input is Valid
-    if (isNaN(num) || num.length==0 || num<8 || num>12000 || (num.length>1 && num[0] == "0") || !Number.isInteger(Number(num))) {
+    if (isNaN(num) || num.length == 0 || num < 8 || num > 12000 || (num.length > 1 && num[0] == "0") || !Number.isInteger(Number(num))) {
         txt += `Invalid Input.  Please enter a whole number between 8 and 12000.  Do not include leading zeros.`;
     } else {
         txt += `You have entered the limit of ${num}.<p>`;
@@ -26,7 +26,7 @@ function getLimitInfo() {
 */
 function countingFractionsInARange(limit) {
     let result = 0;
-    const stack = [[3,2]];
+    const stack = [[3, 2]];
     while (stack.length > 0) {
         const [startDenominator, endDenominator] = stack.pop();
         const curDenominator = startDenominator + endDenominator;
