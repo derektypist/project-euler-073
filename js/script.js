@@ -15,3 +15,26 @@ function getLimitInfo() {
     // Display Information in the Browser
     document.getElementById("limitinfo").innerHTML = txt;
 }
+
+/*
+    Function to return the number of fractions lying between 1/3 and 1/2 in the
+    sorted set of reduced proper fractions for d ≤ limit.
+    countingFractionsInARange(8)     returns 3
+    countingFractionsInARange(1000)  returns 50695
+    countingFractionsInARange(6000)  returns 1823861
+    countingFractionsInARange(12000) returns 7295372
+*/
+function countingFractionsInARange(limit) {
+    let result = 0;
+    const stack = [[3,2]];
+    while (stack.length > 0) {
+        const [startDenominator, endDenominator] = stack.pop();
+        const curDenominator = startDenominator + endDenominator;
+        if (curDenominator <= limit) {
+            result++;
+            stack.push([startDenominator, curDenominator]);
+            stack.push([curDenominator, endDenominator]);
+        }
+    }
+    return result;
+}
