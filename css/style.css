@@ -1,0 +1,25 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Body */
+body {
+    font-family: "Roboto", Arial, Verdana, sans-serif;
+    padding: 1px;
+}
+
+/* Subtitle */
+h2 {
+    color: purple;
+}
+
+/* Instructions */
+.fractions {
+    padding: 1.4rem;
+}
+
+/* Limit (Number) Information */
+#limitinfo {
+    color: #009B77;
+    font-size: 1.5rem;
+    padding: 1.2rem;
+}
